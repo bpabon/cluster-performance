@@ -4,20 +4,6 @@ Este proyecto crea un servidor HTTP en Node.js que responde a las solicitudes ut
 
 Para evaluar el comportamiento y la capacidad de manejo de carga del servidor, se realizaron pruebas de rendimiento utilizando **Autocannon**, una herramienta de benchmarking. Se realizaron tres comparaciones en distintos escenarios:
 
-## Estructura del Proyecto
-
-El proyecto consta de tres archivos principales:
-
-1. **`index.js`**: Archivo de entrada que inicializa el clúster y controla la cantidad de procesos que se van a ejecutar.
-2. **`serverApp.js`**: Archivo que define la configuración del servidor HTTP.
-3. **`package.json`**: Archivo de configuración de dependencias de Node.js, con scripts definidos para ejecutar el servidor.
-
-## Requisitos
-
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
-
-- [Node.js](https://nodejs.org) (versión 14 o superior)
-
 ## Escenarios de Prueba
 
 ### 1. **Caso 1**: Servidor básico sin `process` ni `cluster`
@@ -52,6 +38,19 @@ Los resultados de estas pruebas proporcionan una comparación directa entre los 
 
 **Recomendación**: El **Caso 2** es el más eficiente y escalable, mientras que el **Caso 1** debería ser optimizado para mejorar su rendimiento.
 
+## Estructura del Proyecto
+
+El proyecto consta de tres archivos principales:
+
+1. **`index.js`**: Archivo de entrada que inicializa el clúster y controla la cantidad de procesos que se van a ejecutar.
+2. **`serverApp.js`**: Archivo que define la configuración del servidor HTTP.
+3. **`package.json`**: Archivo de configuración de dependencias de Node.js, con scripts definidos para ejecutar el servidor.
+
+## Requisitos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+
+- [Node.js](https://nodejs.org) (versión 14 o superior)
 ### Instalación de dependencias
 
 Clona este repositorio y navega al directorio del proyecto. Luego, instala las dependencias:
