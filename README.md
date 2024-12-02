@@ -56,8 +56,8 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 Clona este repositorio y navega al directorio del proyecto. Luego, instala las dependencias:
 
 ```bash
-git clone <url-del-repositorio>
-cd <directorio-del-proyecto>
+git clone https://github.com/bpabon/cluster-performance.git
+cd cluster-performance
 npm install
 ```
 
